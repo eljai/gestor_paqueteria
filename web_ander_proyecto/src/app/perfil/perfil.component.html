@@ -1,0 +1,125 @@
+<div class="container">
+
+    <div class="navbar">
+
+        <div class="info">
+            <h2>Mi Perfil</h2>
+            <h6>Home/Perfil</h6>
+        </div>
+
+        <div class="usuario">
+            <div class="icon-perfil">
+                <fa-icon [icon]="faUserCircle" class="fa-2xl"> </fa-icon>
+            </div>
+            <div class="info-perfil">
+                <h5>Nombre Usuario</h5>
+                <h5>Cargo Ususrio</h5>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="menu-vertical">
+        <div class="logo-empresa">
+           
+        </div>
+        <div class="icon icon-perfil icon-perfil-menu">
+            <fa-icon [icon]="faUserCircle" class="fa-xl"> </fa-icon>
+            <h6>Perfil</h6>
+        </div>
+        <div class="icon icon-envios">
+            <fa-icon [icon]="faPaperPlane" class="fa-xl"></fa-icon>
+            <h6>Envios</h6>
+        </div>
+        <div class="icon icon-personal">
+            <fa-icon [icon]="faPeopleGroup" class="fa-xl"> </fa-icon>
+            <h6>Personal</h6>
+        </div>
+        <div class="icon icon-vehiculos">
+            <fa-icon [icon]="faTruckFast" class="fa-xl"> </fa-icon>
+            <h6>Vehiculos</h6>
+        </div>
+        <div class="icon icon-estadisticas">
+
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="contenedor-main">
+
+            <div class="contenedor-main-left">
+                <div class="imagen-perfil">
+                    <img src="" alt="">foto perfil
+                </div>
+                <div class="cargo-sesion">
+                    <p>""Cargo""</p>
+                    <p class="sesion">Cerrar Sesion</p>
+                </div>
+            </div>
+
+            <div class="contenedor-main-right">
+                <div class="info-general">
+                    <h2>Informacion General</h2>
+                </div>
+                <hr><br>
+                <div class="datos-perfil">
+
+
+                    <div class="datos-perfil-left">
+                        <p>Nombre: <input type="text" name="Nombre"></p>
+                        <br>
+                        <p>E-mail: <input type="email" name="email" id=""></p>
+                        <br>
+                        <p>Direccion: <input type="text" name="direccion"></p>
+                        <br>
+                        <p>Telfono: <input type="number" name="telefono" id=""></p>
+                    </div>
+
+                    <div class="datos-perfil-right">
+                        <p>DNI: <input type="text" name="Nº dni" id=""></p>
+                        <br>
+                        <div class="datos-perfil-password">
+                            <br>
+                            <p>Contraseña: <input type="password" name="contraseña" id=""></p>
+                            <br>
+                            <p>Repetir Contraseña: <input type="password" name="contraseña" id=""></p>
+                            <br><input type="button" value="Cambiar">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="configuracion">
+                    <h3>Configuracion General</h3>
+                </div><hr><br>
+                <div class="configuracion-idiomas">
+                    <p>Idioma Preferido:</p>
+                    <div>
+                        <select name="service">
+                            <option>Español</option>
+                            <option>Ingles</option>
+                            <option>Frances</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="permisos">
+                    <h3>Permisos</h3>
+                </div><hr><br>
+
+                <div class="permisos-checkbox">
+                    <input type="checkbox" name="hacer_envios" id="">
+                    <p>:Hacer Envios</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
