@@ -2,18 +2,18 @@
 .container{
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 8% 93%;
     min-height: 100vh;
 }
 
 .icon{
     width: 100%;
-    height: 14.28%;
+    height: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    color: rgb(233, 243, 251);
+    color: #f1f2eb;
+    border-bottom: 1px double #f1f2eb;
 }
 
 .icon-perfil{
@@ -26,25 +26,27 @@
 }
 
 .logo-empresa{
-    height: 10%;
+    height: 8%;
     width: 100%;
-    border-bottom: 1px solid  white ;
     background-image: url(..\..\assets\img\logo_verde.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border-bottom: 1px solid white;
 }
 
 .navbar{
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     grid-column: 2;
     grid-row: 1;
     border-bottom: 1px solid  #000;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 5px 10px 0px #888888a3;
+    /* box-shadow: 0px 5px 10px 0px #888888a3; */
 }
 
 .usuario{
@@ -61,6 +63,7 @@
     grid-column: 1;
     grid-row: 1 / span 2;
     flex-direction: column;
+    border-right:1px solid #8d2525;
 }
 
 .main{
@@ -71,6 +74,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.093);
 }
  
 .contenedor-main{
@@ -85,13 +89,29 @@
     height: 100%;
 }
 
+.contenedor-main-left-info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contenedor-main-right{
     width: 80%;
     height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: #3e1919 solid 1px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 7px 4px 5px 2px grey;
 }
 
 .imagen-perfil{
-    width: 50%;
+    width: 100%;
     height: 20%;
     border-radius: 50%;
     border: 1px solid #000;
@@ -99,6 +119,12 @@
     justify-content: center;
     align-items: center;
 }
+.cargo-sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .datos-perfil{
     width: 100%;
@@ -109,8 +135,24 @@
 .datos-perfil-left{
     width: 50%;
     display: flex;
+}
+.datos-perfil-password-container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.datos-perfil-left-p, .datos-perfil-password-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
+}
+.datos-perfil-left-input, .datos-perfil-password-right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .datos-perfil-right{
@@ -127,7 +169,8 @@ hr{
 
 .datos-perfil-password{
     width: 100%;
-    height: 90%;
+    height: 8em;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -144,6 +187,18 @@ hr{
 
 input,select{
     border: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 2px;
+}
+.input-password{
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.392) ;
+    background-color:  #fac40a  ;
+    color: #000;
+}
+
+
+.permisos-checkbox{
+    display: flex;
+    justify-content: space-between;
 }
 

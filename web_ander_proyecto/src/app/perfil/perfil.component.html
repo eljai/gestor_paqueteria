@@ -21,26 +21,23 @@
 
     <div class="menu-vertical">
         <div class="logo-empresa">
-           
+
         </div>
         <div class="icon icon-perfil icon-perfil-menu">
-            <fa-icon [icon]="faUserCircle" class="fa-xl"> </fa-icon>
-            <h6>Perfil</h6>
+            <fa-icon [icon]="faUserCircle" class="fa-lg"> </fa-icon>
+            <h6>_Perfil</h6>
         </div>
         <div class="icon icon-envios">
-            <fa-icon [icon]="faPaperPlane" class="fa-xl"></fa-icon>
-            <h6>Envios</h6>
+            <fa-icon [icon]="faPaperPlane" class="fa-lg"></fa-icon>
+            <h6>_Envios</h6>
         </div>
         <div class="icon icon-personal">
-            <fa-icon [icon]="faPeopleGroup" class="fa-xl"> </fa-icon>
-            <h6>Personal</h6>
+            <fa-icon [icon]="faPeopleGroup" class="fa-lg"> </fa-icon>
+            <h6>_Personal</h6>
         </div>
         <div class="icon icon-vehiculos">
-            <fa-icon [icon]="faTruckFast" class="fa-xl"> </fa-icon>
-            <h6>Vehiculos</h6>
-        </div>
-        <div class="icon icon-estadisticas">
-
+            <fa-icon [icon]="faTruckFast" class="fa-lg"></fa-icon>
+            <h6>_Vehiculos</h6>
         </div>
 
     </div>
@@ -50,51 +47,68 @@
         <div class="contenedor-main">
 
             <div class="contenedor-main-left">
-                <div class="imagen-perfil">
-                    <img src="" alt="">foto perfil
-                </div>
-                <div class="cargo-sesion">
-                    <p>""Cargo""</p>
-                    <p class="sesion">Cerrar Sesion</p>
+                <div class="contenedor-main-left-info">
+                    <div class="imagen-perfil">
+                        <img src="" alt="">foto perfil
+                    </div>
+                    <div class="cargo-sesion">
+                        <p>""Cargo""</p>
+                        <a class="sesion" href="#">Cerrar Sesion</a>
+                    </div>
                 </div>
             </div>
 
             <div class="contenedor-main-right">
                 <div class="info-general">
-                    <h2>Informacion General</h2>
+                    <h2>Informacion General</h2><br>
+                    <hr>
                 </div>
-                <hr><br>
+
                 <div class="datos-perfil">
 
 
                     <div class="datos-perfil-left">
-                        <p>Nombre: <input type="text" name="Nombre"></p>
-                        <br>
-                        <p>E-mail: <input type="email" name="email" id=""></p>
-                        <br>
-                        <p>Direccion: <input type="text" name="direccion"></p>
-                        <br>
-                        <p>Telfono: <input type="number" name="telefono" id=""></p>
+                        <div class="datos-perfil-left-p">
+                            <p>Nombre:</p>
+                            <p>E-mail:</p>
+                            <p>Direccion:</p>
+                            <p>Telefono:</p>
+                        </div>
+
+                        <div class="datos-perfil-left-input">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="E-mail">
+                            <input type="text" placeholder="Direccion">
+                            <input type="text" placeholder="Telefono">
+                        </div>
+
                     </div>
 
                     <div class="datos-perfil-right">
-                        <p>DNI: <input type="text" name="Nº dni" id=""></p>
+                        <p>DNI: <input type="text" name="Nº dni" placeholder="DNI"></p>
                         <br>
                         <div class="datos-perfil-password">
-                            <br>
-                            <p>Contraseña: <input type="password" name="contraseña" id=""></p>
-                            <br>
-                            <p>Repetir Contraseña: <input type="password" name="contraseña" id=""></p>
-                            <br><input type="button" value="Cambiar">
+                            <div class="datos-perfil-password-container">
+                                <div class="datos-perfil-password-left">
+                                    <p>Contraseña:</p>
+                                    <p>Repetir Contraseña:</p>
+                                </div>
+                                <div class="datos-perfil-password-right">
+                                    <input type="password" name="contraseña" id="">
+                                    <input type="password" name="contraseña" id="">
+                                </div>
+                            </div>
+                            <input class="input-password" type="button" value="Cambiar">
                         </div>
 
                     </div>
                 </div>
 
-                <br><br>
+
                 <div class="configuracion">
-                    <h3>Configuracion General</h3>
-                </div><hr><br>
+                    <h3>Configuracion General</h3><br>
+                    <hr>
+                </div>
                 <div class="configuracion-idiomas">
                     <p>Idioma Preferido:</p>
                     <div>
@@ -107,12 +121,31 @@
                 </div>
 
                 <div class="permisos">
-                    <h3>Permisos</h3>
-                </div><hr><br>
+                    <h3>Permisos</h3><br>
+                    <hr>
+                </div>
 
                 <div class="permisos-checkbox">
-                    <input type="checkbox" name="hacer_envios" id="">
-                    <p>:Hacer Envios</p>
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="">Hacer Envios</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="">Editar Envios</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="">Cancelar Envios</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="">Borrar Envios</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="">Crear Usuarios</label>
+                    </div>
                 </div>
 
 
